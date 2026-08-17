@@ -1,0 +1,65 @@
+# ── Sensitive / secrets ──────────────────────────────────────────────────────
+.env
+.env.local
+.env.production
+.env.staging
+# .env.example is intentionally NOT ignored — it has no real secrets
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Build / packaging
+*.egg-info/
+dist/
+build/
+*.egg
+MANIFEST
+pip-wheel-metadata/
+
+# Type-checking / linting caches
+.mypy_cache/
+.ruff_cache/
+.pytype/
+.pyre/
+
+# Test & coverage
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+*.cover
+
+# ── Database ──────────────────────────────────────────────────────────────────
+*.db
+*.sqlite3
+*.sqlite
+
+# ── IDE / editors ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Alembic ───────────────────────────────────────────────────────────────────
+# Keep alembic.ini (it has no secrets) and all migration files.
+# Nothing to ignore here — alembic.ini, versions/, env.py all belong in git.
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+logs/
