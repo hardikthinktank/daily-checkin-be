@@ -73,7 +73,8 @@ def any_field_gte(ctx: CheckinContext, params: dict) -> dict | None:
         if FIELD_GETTERS[f](ctx.today) >= threshold
     }
     if hits:
-        return {"hits": hits, "gte": threshold}
+        hits_str = ", ".join(f"{field}: {value}" for field, value in hits.items())
+        return {"hits": hits_str, "gte": threshold}
     return None
 
 
