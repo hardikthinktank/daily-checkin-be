@@ -13,7 +13,4 @@ python -m scripts.seed_rules
 echo "Seeding demo data..."
 python -m scripts.seed_demo_data
 
-echo "Seeding test-case fixtures..."
-python -m scripts.seed_test_case_fixtures
-
 echo "Build completed successfully!"
